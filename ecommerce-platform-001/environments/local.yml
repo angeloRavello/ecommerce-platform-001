@@ -1,0 +1,6 @@
+name: local
+variables:
+  - name: product_service_url
+    value: http://localhost:8081
+  - name: order_service_url
+    value: http://localhost:8080

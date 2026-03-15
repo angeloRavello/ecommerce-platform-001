@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WorkspaceSettings">
+    <project name="order-service" path="$PROJECT_DIR$/order-service">
+      <vcs id="Git" remoteUrl="https://github.com/angeloRavello/ecommerce-platform-001--order-service.git" />
+    </project>
+    <project name="product-service" path="$PROJECT_DIR$/product-service">
+      <vcs id="Git" remoteUrl="https://github.com/angeloRavello/ecommerce-platform-001--product-service.git" />
+    </project>
+    <option name="workspace" value="true" />
+  </component>
+</project>

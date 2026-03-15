@@ -1,0 +1,59 @@
+info:
+  name: createOrder
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: "{{order_service_url}}/api/orders"
+  body:
+    type: json
+    data: |-
+      {
+        "customerEmail": "angeloravello26@gmail.com",
+        "items": [
+          {
+            "productId": 1,
+            "quantity": 1
+          },
+          {
+            "productId": 4,
+            "quantity": 1
+          }
+        ]
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+
+examples:
+  - name: example
+    request:
+      url: "{{order_service_url}}/api/orders"
+      method: POST
+      body:
+        type: json
+        data: |-
+          {
+            "customerEmail": "angeloravello26@gmail.com",
+            "items": [
+              {
+                "productId": 1,
+                "quantity": 1
+              },
+              {
+                "productId": 5,
+                "quantity": 1
+              }
+            ]
+          }
+    response:
+      status: 200
+      statusText: OK
+      body:
+        type: text
+        data: ""

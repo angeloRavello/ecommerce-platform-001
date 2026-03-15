@@ -1,0 +1,8 @@
+[submodule "product-service"]
+	path = product-service
+	url = https://github.com/angeloRavello/ecommerce-platform-001--product-service.git
+	branch = master
+[submodule "order-service"]
+	path = order-service
+	url = https://github.com/angeloRavello/ecommerce-platform-001--order-service.git
+	branch = master
